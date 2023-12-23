@@ -24,23 +24,25 @@ import {
     tripguide,
     threejs,
 } from "../assets";
+import NavbarLink from "./enums";
+import { Experience, NavLink, Project, ProjectTag, Service, Technology, Testimonial } from "./types";
 
-export const navLinks = [
+export const navLinks: NavLink[] = [
     {
-        id: "about",
-        title: "About",
+        id: NavbarLink.ABOUT.toLowerCase(),
+        title: NavbarLink.ABOUT,
     },
     {
-        id: "work",
-        title: "Work",
+        id: NavbarLink.WORK.toLowerCase(),
+        title: NavbarLink.WORK,
     },
     {
-        id: "contact",
-        title: "Contact",
+        id: NavbarLink.CONTACT.toLowerCase(),
+        title: NavbarLink.CONTACT,
     },
 ];
 
-const services = [
+const services: Service[] = [
     {
         title: "Web Developer",
         icon: web,
@@ -59,7 +61,7 @@ const services = [
     },
 ];
 
-const technologies = [
+const technologies: Technology[] = [
     {
         name: "HTML 5",
         icon: html,
@@ -114,7 +116,7 @@ const technologies = [
     },
 ];
 
-const experiences = [
+const experiences: Experience[] = [
     {
         title: "Software Engineer",
         company_name: "NetSPI",
@@ -170,7 +172,7 @@ const experiences = [
     },
 ];
 
-const testimonials = [
+const testimonials: Testimonial[] = [
     {
         testimonial:
             "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -197,7 +199,7 @@ const testimonials = [
     },
 ];
 
-const projects = [
+const projects: Project[] = [
     {
         name: "Car Rent",
         description:
@@ -215,7 +217,7 @@ const projects = [
                 name: "tailwind",
                 color: "pink-text-gradient",
             },
-        ],
+        ] as ProjectTag[],
         image: carrent,
         source_code_link: "https://github.com/",
     },
@@ -236,7 +238,7 @@ const projects = [
                 name: "scss",
                 color: "pink-text-gradient",
             },
-        ],
+        ] as ProjectTag[],
         image: jobit,
         source_code_link: "https://github.com/",
     },
@@ -257,7 +259,7 @@ const projects = [
                 name: "css",
                 color: "pink-text-gradient",
             },
-        ],
+        ] as ProjectTag[],
         image: tripguide,
         source_code_link: "https://github.com/",
     },
