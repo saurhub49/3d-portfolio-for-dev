@@ -7,19 +7,28 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import aws from "./tech/aws.png";
+import awsS3 from "./tech/s3.png";
+import awslambda from "./tech/lambda.png";
+import bootstrap from "./tech/bootstrap.png";
+import csharp from"./tech/csharp.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import dotnet from "./tech/dotnet.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+import java from "./tech/java.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import mui from "./tech/mui.png";
+import mysql from "./tech/mysql.png"
+import postgresql from "./tech/postgresql.png";
+import python from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import springboot from "./tech/springboot.png";
+import springframework from "./tech/springframework.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 
 import netspi from "./company/netspi.png";
 
@@ -36,19 +45,28 @@ export {
   github,
   menu,
   close,
+  aws,
+  awsS3,
+  awslambda,
+  bootstrap,
+  csharp,
   css,
   docker,
-  figma,
+  dotnet,
   git,
   html,
+  java,
   javascript,
-  mongodb,
-  nodejs,
+  mui,
+  mysql,
+  postgresql,
+  python,
   reactjs,
   redux,
+  springboot,
+  springframework,
   tailwind,
   typescript,
-  threejs,
   netspi,
   carrent,
   jobit,

@@ -10,16 +10,25 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
     docker,
     carrent,
     jobit,
     tripguide,
-    threejs,
     netspi,
+    java,
+    python,
+    csharp,
+    springboot,
+    springframework,
+    dotnet,
+    mysql,
+    postgresql,
+    mui,
+    bootstrap,
+    aws,
+    awsS3,
+    awslambda,
 } from "../assets";
 import NavbarLink from "./enums";
 import { Experience, NavLink, Project, ProjectTag, Service, Technology, Testimonial } from "./types";
@@ -32,6 +41,10 @@ export const navLinks: NavLink[] = [
     {
         id: NavbarLink.WORK.toLowerCase(),
         title: NavbarLink.WORK,
+    },
+    {
+        id: NavbarLink.SKILLS.toLowerCase(),
+        title: NavbarLink.SKILLS,
     },
     {
         id: NavbarLink.CONTACT.toLowerCase(),
@@ -66,6 +79,14 @@ const services: Service[] = [
 
 const technologies: Technology[] = [
     {
+        name: "Java",
+        icon: java,
+    },
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
         name: "HTML 5",
         icon: html,
     },
@@ -82,6 +103,30 @@ const technologies: Technology[] = [
         icon: typescript,
     },
     {
+        name: "C#",
+        icon: csharp,
+    },
+    // {
+    //     name: "Spring Boot",
+    //     icon: springboot,
+    // },
+    {
+        name: "Spring Framework",
+        icon: springframework,
+    },
+    {
+        name: ".NET Core",
+        icon: dotnet,
+    },
+    // {
+    //     name: "MySQL",
+    //     icon: mysql,
+    // },
+    {
+        name: "PostgreSQL",
+        icon: postgresql,
+    },
+    {
         name: "React JS",
         icon: reactjs,
     },
@@ -90,33 +135,37 @@ const technologies: Technology[] = [
         icon: redux,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
+        name: "Git",
         icon: git,
     },
-    {
-        name: "figma",
-        icon: figma,
-    },
+    // {
+    //     name: "Material UI",
+    //     icon: mui,
+    // },
+    // {
+    //     name: "Tailwind CSS",
+    //     icon: tailwind,
+    // },
+    // {
+    //     name: "Bootstrap",
+    //     icon: bootstrap,
+    // },
     {
         name: "docker",
         icon: docker,
     },
+    {
+        name: "AWS",
+        icon: aws,
+    },
+    // {
+    //     name: "AWS S3",
+    //     icon: awsS3,
+    // },
+    // {
+    //     name: "AWS Lambda",
+    //     icon: awslambda,
+    // }
 ];
 
 const experiences: Experience[] = [

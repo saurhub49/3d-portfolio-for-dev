@@ -2,7 +2,7 @@ import { EarthCanvas, BallCanvas, ComputerDesktopCanvas, StarsCanvas } from './c
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
-import Tech from './Tech';
+import Technologies from './Technologies';
 import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
@@ -12,7 +12,7 @@ export {
   Hero,
   Navbar,
   About,
-  Tech,
+  Technologies,
   Experience,
   Works,
   Feedbacks,
