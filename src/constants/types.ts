@@ -17,7 +17,7 @@ export interface Technology {
 
 export interface Experience {
     title: string;
-    company_name: string;
+    companyName: string;
     icon: string;
     iconBg: string;
     date: string;
@@ -45,3 +45,6 @@ export interface Project {
     source_code_link: string;
 }
 
+export interface IndexType {
+    index: number;
+}

@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
       const id = event.currentTarget.ariaLabel as NavbarLink;
       setActive(id);
       onClickToggle();
-      if (id === NavbarLink.DEFAULT) {
+      if (id == NavbarLink.DEFAULT) {
         window.scrollTo(0, 0);
       }
     },
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          title={NavbarLink.DEFAULT.toLowerCase()}
+          aria-label={NavbarLink.DEFAULT.toLowerCase()}
           to="/"
           className='flex items-center gap-2'
           onClick={onClickLinkHandler}

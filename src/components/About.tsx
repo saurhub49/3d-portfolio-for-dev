@@ -6,12 +6,9 @@ import { about, services } from '../constants'
 import { Tilt } from 'react-tilt'
 import { SectionWrapper } from '../hoc'
 import NavbarLink from '../constants/enums'
+import { IndexType, Service } from '../constants/types'
 
-interface ServiceCardProps {
-  index: number;
-  title: string;
-  icon: string;
-}
+type ServiceCardProps = IndexType & Service;
 
 const ServiceCard: React.FC<ServiceCardProps> = (props) => {
   const { index, title, icon } = props;
@@ -40,12 +37,12 @@ const ServiceCard: React.FC<ServiceCardProps> = (props) => {
   )
 }
 
-const AboutContent = () => {
+const AboutContent = (): React.ReactElement => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>INTRODUCTION</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
