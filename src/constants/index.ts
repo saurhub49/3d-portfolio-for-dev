@@ -42,21 +42,27 @@ export const navLinks: NavLink[] = [
     },
 ];
 
+const about: string =
+    "Fast-paced Fullstack Software Engineer, leading transformative initiatives in advanced technological solutions."
+    + " Recognised for adeptly architecting high-performance applications, collaborating across teams to deliver"
+    + " cutting-edge and secure outcomes. As a dedicated advocate for technological progress, actively cultivating"
+    + " connections with industry peers, fostering a collaborative spirit to propel the boundaries of innovation and excellence."
+
 const services: Service[] = [
     {
-        title: "Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
+        title: "Database Technologies",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Backend Development",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Frontend Development",
+        icon: web,
+    },
+    {
+        title: "Cloud Computing",
         icon: creator,
     },
 ];
@@ -265,4 +271,4 @@ const projects: Project[] = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { about, services, technologies, experiences, testimonials, projects };

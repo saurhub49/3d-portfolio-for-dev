@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   const onClickLinkHandler = useCallback(
     (event: React.MouseEvent) => {
-      const id = event.currentTarget.id as NavbarLink;
+      const id = event.currentTarget.ariaLabel as NavbarLink;
       setActive(id);
       if (id == NavbarLink.DEFAULT) {
         window.scrollTo(0, 0);
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
 
   const onClickMobileLinkHandler = useCallback(
     (event: React.MouseEvent) => {
-      const id = event.currentTarget.id as NavbarLink;
+      const id = event.currentTarget.ariaLabel as NavbarLink;
       setActive(id);
       onClickToggle();
       if (id === NavbarLink.DEFAULT) {
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          id={NavbarLink.DEFAULT}
+          title={NavbarLink.DEFAULT.toLowerCase()}
           to="/"
           className='flex items-center gap-2'
           onClick={onClickLinkHandler}
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
           {
             navLinks.map((link: NavLink) => (
               <li
-                id={link.id}
+                aria-label={link.id}
                 key={link.id}
                 className={`${active == link.id
                   ? 'text-white'
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               {
                 navLinks.map((link: NavLink) => (
                   <li
-                    id={link.id}
+                    aria-label={link.id}
                     key={link.id}
                     className={`${active == link.id
                       ? 'text-white'

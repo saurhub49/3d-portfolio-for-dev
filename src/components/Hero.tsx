@@ -1,8 +1,8 @@
 import React from 'react'
 import { styles } from '../styles'
 import { ComputerDesktopCanvas } from '.';
-import NavbarLink from '../constants/enums';
 import { motion } from 'framer-motion';
+import NavbarLink from '../constants/enums';
 
 const Hero: React.FC = () => {
   return (

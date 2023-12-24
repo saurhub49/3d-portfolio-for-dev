@@ -3,7 +3,7 @@ import { Variants } from "framer-motion";
 type Direction = "up" | "down" | "left" | "right" | "";
 type TransitionType = "spring" | "";
 
-export const textVariant = (delay: number): Variants => {
+export const textVariant = (delay?: number): Variants => {
     return {
         hidden: {
             y: -50,
@@ -79,7 +79,7 @@ export const slideIn = (direction: Direction, type: TransitionType, delay: numbe
     } as Variants;
 };
 
-export const staggerContainer = (staggerChildren: number, delayChildren: number) => {
+export const staggerContainer = (staggerChildren?: number, delayChildren?: number) => {
     return {
         hidden: {},
         show: {
