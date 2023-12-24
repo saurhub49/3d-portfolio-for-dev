@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
       const id = event.currentTarget.id as NavbarLink;
       setActive(id);
       onClickToggle();
-      if (id == NavbarLink.DEFAULT) {
+      if (id === NavbarLink.DEFAULT) {
         window.scrollTo(0, 0);
       }
     },
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
     ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary
     `}
     >
-      <div className='w-full flex justify-between items-center ms-auto'>
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           id={NavbarLink.DEFAULT}
           to="/"
@@ -110,6 +110,6 @@ const Navbar: React.FC = () => {
       </div>
     </nav>
   )
-}
+};
 
 export default Navbar
