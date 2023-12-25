@@ -107,6 +107,30 @@
   -webkit-text-fill-color: transparent;
 }
 
+.yellow-text-gradient {
+  background: #f6d365;
+  background: -webkit-linear-gradient(to top, #f6d365, #fda085);
+  background: linear-gradient(to top, #f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.teal-text-gradient {
+  background: #02aab0;
+  background: -webkit-linear-gradient(to top, #02aab0, #00cdac);
+  background: linear-gradient(to top, #02aab0, #00cdac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.indigo-text-gradient {
+  background: #6a11cb;
+  background: -webkit-linear-gradient(to top, #6a11cb, #2575fc);
+  background: linear-gradient(to top, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

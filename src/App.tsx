@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Technologies, Works } from './components'
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Technologies, Projects } from './components'
 import Education from './components/Education'
 
 
@@ -15,8 +15,8 @@ const App: React.FC = () => {
         <About />
         <Experience />
         <Technologies />
+        <Projects />
         <Education />
-        <Works />
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />

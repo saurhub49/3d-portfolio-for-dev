@@ -90,6 +90,6 @@ export const EducationContent = () => {
     );
 };
 
-const Education = SectionWrapper(EducationContent, NavbarLink.EDUCATION);
+const Education = SectionWrapper(EducationContent, NavbarLink.EDUCATION.toLowerCase());
 
 export default Education;

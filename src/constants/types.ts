@@ -52,7 +52,8 @@ export interface Project {
     description: string;
     tags: ProjectTag[];
     image: string;
-    source_code_link: string;
+    link: string;
+    extraLink?: string;
 }
 
 export interface IndexType {

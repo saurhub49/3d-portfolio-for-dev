@@ -37,6 +37,10 @@ import sppu from "./education/sppu.png";
 import bharati from "./education/bharati.png"
 import msbte from "./education/msbte.png";
 
+import portfolio from "./projects/portfolio.png";
+import opus from "./projects/opus.png";
+import emeraldoasis from "./projects/emeraldoasis.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -77,6 +81,9 @@ export {
   sppu,
   bharati,
   msbte,
+  portfolio,
+  opus,
+  emeraldoasis,
   carrent,
   jobit,
   tripguide,

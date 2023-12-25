@@ -9,29 +9,32 @@ import {
     css,
     reactjs,
     redux,
-    tailwind,
+    // tailwind,
     git,
     docker,
-    carrent,
-    jobit,
-    tripguide,
+    // carrent,
+    // jobit,
+    // tripguide,
     netspi,
     java,
     python,
     csharp,
-    springboot,
+    // springboot,
     springframework,
     dotnet,
-    mysql,
+    // mysql,
     postgresql,
-    mui,
-    bootstrap,
+    // mui,
+    // bootstrap,
     aws,
-    awsS3,
-    awslambda,
+    // awsS3,
+    // awslambda,
     sunbeam,
     sppu,
     bharati,
+    portfolio,
+    opus,
+    emeraldoasis,
 } from "../assets";
 import NavbarLink from "./enums";
 import { Education, Experience, NavLink, Project, ProjectTag, Service, Technology, Testimonial } from "./types";
@@ -42,16 +45,24 @@ export const navLinks: NavLink[] = [
         title: NavbarLink.ABOUT,
     },
     {
-        id: NavbarLink.WORK.toLowerCase(),
-        title: NavbarLink.WORK,
+        id: NavbarLink.EXPERIENCE.toLowerCase(),
+        title: NavbarLink.EXPERIENCE,
     },
     {
         id: NavbarLink.SKILLS.toLowerCase(),
         title: NavbarLink.SKILLS,
     },
     {
+        id: NavbarLink.PROJECTS.toLowerCase(),
+        title: NavbarLink.PROJECTS,
+    },
+    {
         id: NavbarLink.EDUCATION.toLowerCase(),
         title: NavbarLink.EDUCATION,
+    },
+    {
+        id: NavbarLink.TESTIMONIALS.toLowerCase(),
+        title: NavbarLink.TESTIMONIALS,
     },
     {
         id: NavbarLink.CONTACT.toLowerCase(),
@@ -277,67 +288,96 @@ const testimonials: Testimonial[] = [
 
 const projects: Project[] = [
     {
-        name: "Car Rent",
+        name: "Portfolio",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "The Portfolio Project is a comprehensive web application designed to showcase a software developer's skills, projects, experiences, and achievements in a visually appealing and interactive manner. This portfolio acts as a digital resume and a platform for the developer to present their professional journey, skills, and accomplishments.",
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
+                color: "orange-text-gradient",
             },
             {
                 name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "three",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "framer",
                 color: "pink-text-gradient",
             },
+            {
+                name: "reacttilt",
+                color: "yellow-text-gradient",
+            },
         ] as ProjectTag[],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: portfolio,
+        link: "https://github.com/saurabhthecodewizard/portfolio",
     },
     {
-        name: "Job IT",
+        name: "Opus",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A corporate management system which is a specialized solution designed to facilitate efficient management of resources within an organization. This comprehensive system streamlines various HR processes, including employee onboarding, attendance tracking, project and task management.",
         tags: [
+            {
+                name: "java",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "springboot",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mysql",
+                color: "pink-text-gradient",
+            },
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "yellow-text-gradient",
             },
             {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
+                name: "redux",
+                color: "indigo-text-gradient",
             },
         ] as ProjectTag[],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: opus,
+        link: "https://github.com/saurabhthecodewizard/opus-client",
+        extraLink: "https://github.com/saurabhthecodewizard/opus-server",
     },
     {
-        name: "Trip Guide",
+        name: "Emerald Oasis",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A Multi-Cuisine Food Ordering System which revolutionizes the dining experience for customers of the restaurant chain, Emerald Oasis. This intuitive system offers an online ordering solution that allows customers to explore a diverse multi-cuisine menu, place orders, all from the comfort of their homes or on-the-go.",
         tags: [
             {
-                name: "nextjs",
-                color: "blue-text-gradient",
+                name: "java",
+                color: "orange-text-gradient",
             },
             {
-                name: "supabase",
+                name: "javascript",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "springboot",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mysql",
                 color: "pink-text-gradient",
             },
+            {
+                name: "react",
+                color: "yellow-text-gradient",
+            },
         ] as ProjectTag[],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: emeraldoasis,
+        link: "https://github.com/saurabhthecodewizard/Emerald-Oasis",
     },
 ];
 

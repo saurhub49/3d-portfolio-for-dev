@@ -90,6 +90,6 @@ const ExperienceContent = (): React.ReactElement => {
   );
 };
 
-const Experience = SectionWrapper(ExperienceContent, NavbarLink.WORK.toLowerCase());
+const Experience = SectionWrapper(ExperienceContent, NavbarLink.EXPERIENCE.toLowerCase());
 
 export default Experience;
