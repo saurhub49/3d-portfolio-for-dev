@@ -24,6 +24,16 @@ export interface Experience {
     points: string[];
 }
 
+export interface Education {
+    degree: string;
+    grade: string;
+    university: string;
+    date: string;
+    icon: string;
+    iconBg: string;
+    points: string[];
+}
+
 export interface Testimonial {
     testimonial: string;
     name: string;

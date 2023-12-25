@@ -87,7 +87,7 @@ const ExperienceContent = (): React.ReactElement => {
         </VerticalTimeline>
       </div>
     </>
-  )
+  );
 };
 
 const Experience = SectionWrapper(ExperienceContent, NavbarLink.WORK.toLowerCase());

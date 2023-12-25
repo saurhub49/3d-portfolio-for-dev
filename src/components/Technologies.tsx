@@ -23,7 +23,6 @@ const TechContent = (): React.ReactElement => {
         ))}
       </div>
     </>
-
   )
 };
 

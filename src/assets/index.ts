@@ -11,7 +11,7 @@ import aws from "./tech/aws.png";
 import awsS3 from "./tech/s3.png";
 import awslambda from "./tech/lambda.png";
 import bootstrap from "./tech/bootstrap.png";
-import csharp from"./tech/csharp.png";
+import csharp from "./tech/csharp.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import dotnet from "./tech/dotnet.png";
@@ -31,6 +31,11 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 
 import netspi from "./company/netspi.png";
+
+import sunbeam from "./education/sunbeam.png";
+import sppu from "./education/sppu.png";
+import bharati from "./education/bharati.png"
+import msbte from "./education/msbte.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -68,6 +73,10 @@ export {
   tailwind,
   typescript,
   netspi,
+  sunbeam,
+  sppu,
+  bharati,
+  msbte,
   carrent,
   jobit,
   tripguide,
