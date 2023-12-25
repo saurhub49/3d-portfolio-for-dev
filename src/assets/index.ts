@@ -41,9 +41,10 @@ import portfolio from "./projects/portfolio.png";
 import opus from "./projects/opus.png";
 import emeraldoasis from "./projects/emeraldoasis.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import prafull from "./testimonials/prafull.png";
+import akash from "./testimonials/akash.png";
+import sujit from "./testimonials/sujit.png";
+
 
 export {
   logo,
@@ -84,7 +85,7 @@ export {
   portfolio,
   opus,
   emeraldoasis,
-  carrent,
-  jobit,
-  tripguide,
+  prafull,
+  akash,
+  sujit
 };

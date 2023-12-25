@@ -90,8 +90,8 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         </div>
       </Tilt>
     </motion.div>
-  )
-}
+  );
+};
 
 const ProjectsContent = (): React.ReactElement => {
   return (
@@ -123,8 +123,8 @@ const ProjectsContent = (): React.ReactElement => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
 const Projects = SectionWrapper(ProjectsContent, NavbarLink.PROJECTS.toLowerCase());
 

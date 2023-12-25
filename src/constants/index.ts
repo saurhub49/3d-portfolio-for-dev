@@ -12,9 +12,6 @@ import {
     // tailwind,
     git,
     docker,
-    // carrent,
-    // jobit,
-    // tripguide,
     netspi,
     java,
     python,
@@ -35,6 +32,9 @@ import {
     portfolio,
     opus,
     emeraldoasis,
+    akash,
+    prafull,
+    sujit,
 } from "../assets";
 import NavbarLink from "./enums";
 import { Education, Experience, NavLink, Project, ProjectTag, Service, Technology, Testimonial } from "./types";
@@ -259,33 +259,6 @@ export const educations: Education[] = [
     }
 ]
 
-const testimonials: Testimonial[] = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
-
 const projects: Project[] = [
     {
         name: "Portfolio",
@@ -378,6 +351,33 @@ const projects: Project[] = [
         ] as ProjectTag[],
         image: emeraldoasis,
         link: "https://github.com/saurabhthecodewizard/Emerald-Oasis",
+    },
+];
+
+const testimonials: Testimonial[] = [
+    {
+        testimonial:
+            "I highly recommend Saurabh because his exceptional problem-solving skills make him an asset to any team or project.",
+        name: "Prafull Bagde",
+        designation: "Growth Architect",
+        company: "",
+        image: prafull,
+    },
+    {
+        testimonial:
+            "What sets Saurabh apart is not just his technical prowess, but his unwavering commitment to helping others succeed.",
+        name: "Akash Deshpande",
+        designation: "Project Engineer",
+        company: "CDAC ACTS",
+        image: akash,
+    },
+    {
+        testimonial:
+            "Saurabh's support went beyond just coding – he took the time to understand each team member's learning style.",
+        name: "Sujit Kadam",
+        designation: "Software Engineer",
+        company: "Bajaj Finserv",
+        image: sujit,
     },
 ];
 

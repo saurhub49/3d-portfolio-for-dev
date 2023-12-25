@@ -58,8 +58,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
         </ul>
       </div>
     </VerticalTimelineElement>
-  )
-}
+  );
+};
 
 
 const ExperienceContent = (): React.ReactElement => {
