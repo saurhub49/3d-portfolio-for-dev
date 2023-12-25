@@ -5,8 +5,10 @@ import * as random from "maath/random/dist/maath-random.esm";
 import CanvasLoader from '../CanvasLoader';
 import * as THREE from 'three';
 
+type PointsRefType = React.MutableRefObject<THREE.Points<THREE.BufferGeometry<THREE.NormalBufferAttributes>, THREE.Material | THREE.Material[]> | null>;
+
 const Stars: React.FC = () => {
-  const ref = useRef<THREE.Object3D | null>(null);
+  const ref: PointsRefType = useRef<THREE.Points<THREE.BufferGeometry<THREE.NormalBufferAttributes>, THREE.Material | THREE.Material[]> | null>(null);
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((_state: RootState, delta: number) => {
@@ -14,7 +16,7 @@ const Stars: React.FC = () => {
       ref.current.rotation.x -= delta / 10;
       ref.current.rotation.y -= delta / 15;
     }
-  })
+  });
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -28,8 +30,9 @@ const Stars: React.FC = () => {
         />
       </Points>
     </group>
-  )
-}
+  );
+};
+
 
 const StarsCanvas = () => {
   return (

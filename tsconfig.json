@@ -18,8 +18,17 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Vite Client */
+    "types": [
+      "vite/client", 
+    ],
+
+    /* Allow JavaScript Files */
+    "allowJs": true
   },
   "include": ["src"],
+  "exclude": ["**/*.stories.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
