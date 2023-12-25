@@ -78,6 +78,6 @@ const TestimonialsContent = () => {
   );
 };
 
-const Testimonials = SectionWrapper(TestimonialsContent, NavbarLink.TESTIMONIALS);
+const Testimonials = SectionWrapper(TestimonialsContent, NavbarLink.TESTIMONIALS.toLowerCase());
 
 export default Testimonials;

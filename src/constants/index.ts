@@ -120,10 +120,10 @@ const technologies: Technology[] = [
         name: "TypeScript",
         icon: typescript,
     },
-    {
-        name: "C#",
-        icon: csharp,
-    },
+    // {
+    //     name: "C#",
+    //     icon: csharp,
+    // },
     // {
     //     name: "Spring Boot",
     //     icon: springboot,
@@ -132,10 +132,10 @@ const technologies: Technology[] = [
         name: "Spring Framework",
         icon: springframework,
     },
-    {
-        name: ".NET Core",
-        icon: dotnet,
-    },
+    // {
+    //     name: ".NET Core",
+    //     icon: dotnet,
+    // },
     // {
     //     name: "MySQL",
     //     icon: mysql,
@@ -359,8 +359,8 @@ const testimonials: Testimonial[] = [
         testimonial:
             "I highly recommend Saurabh because his exceptional problem-solving skills make him an asset to any team or project.",
         name: "Prafull Bagde",
-        designation: "Growth Architect",
-        company: "",
+        designation: "Product Manager",
+        company: "Qollabra",
         image: prafull,
     },
     {

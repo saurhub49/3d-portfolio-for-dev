@@ -1,7 +1,7 @@
 import { Variants } from "framer-motion";
 
 type Direction = "up" | "down" | "left" | "right" | "";
-type TransitionType = "spring" | "";
+type TransitionType = "spring" | "tween" | "";
 
 export const textVariant = (delay?: number): Variants => {
     return {
